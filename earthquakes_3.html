@@ -61,13 +61,17 @@
    "Open Street Map INT": osmint_basemap
   };
 
+  // Add earthquake points
+  var overlay_eq_points_try = L.geoJSON(eq_points_try).addTo(mymap);
+	 
   // Layer control
   var legend = L.control.layers(basemaps).addTo(mymap);
 	 
   // Scale
   L.control.scale({maxWidth: 150, metric: true, imperial: true}).addTo(mymap);
 	 
-
+	 
+	 
  </script>
 
 </body>
